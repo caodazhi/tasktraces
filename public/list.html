@@ -11,12 +11,28 @@
 		<link src ="css/style.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
-		<div class="row-fluid">
-			<form id="new-task">
-				<input type = "text" name = "title" placeholder="输入问题标题"/>
-				<input type = "text" name = "taskContent" placeholder="输入问题"/>
-				<a id = "send" class="btn btn-primary">提交</a>
-			</form>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<h1>问题清单</h1>
+				<table class="table table-bordered table-striped">
+					<caption>内容</caption>
+					<thead><tr><th>标题</th>
+						<th>内容</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="2">暂无问题</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="row-fluid">
+				<form id="new-task">
+					<input type = "text" name = "title" placeholder="输入问题标题"/>
+					<input type = "text" name = "taskContent" placeholder="输入问题"/>
+					<a id = "send" class="btn btn-primary">提交</a>
+				</form>
+			</div>
 		</div>
 	</body>
 </html>

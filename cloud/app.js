@@ -14,3 +14,15 @@ app.get('/hello', function(req, res) {
 
 // 最后，必须有这行代码来使 express 响应 HTTP 请求
 app.listen();
+
+
+$(document).ready(function(){
+	getMessages();
+	$("#send").click(function(){
+		var title = $('input[name=title]').attr('value');
+		var taskContent = $('input[name=taskContent]').attr('value');
+$.ajax({
+	url:'http://'
+})
+	})
+})
